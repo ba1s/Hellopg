@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Cold Theme Social Links</title>
+    <style>
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Video background styling */
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Places video behind content */
+        }
+
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #27496D;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            text-align: center;
+            max-width: 400px;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #A7C6E7;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            animation: fadeIn 3.5s ease-in-out;
+        }
+
+        .link-button {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #639CD9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .link-button:hover {
+            background-color: #507DBC;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop class="video-bg">
+        <source src="video.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Profile Section -->
+    <img src="photo.jpeg" alt="Your Profile Picture" class="profile-picture">
+    <h1>B A S I L✨</h1>
+    <p>my social media profiles:</p>
+
+    <div class="links">
+        <a href="https://www.tiktok.com/@9b.ii?_t=8qyPUaCTvS3&_r=1" class="link-button">TikTok</a>
+        <a href="https://snapchat.com/t/1GdfAPKH" class="link-button">Snapchat</a>
+    </div>
+
+</body>
+</html>
